@@ -77,8 +77,6 @@ textarea:not([rows]) {
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
@@ -92,16 +90,14 @@ body {
     background-image: url('images/haliewest.jpg');
     background-size: cover;
     width: 35%;
-    max-width: 540px;
-    height: 1024px;
+    min-height: 1024px;
     
 }
 
 .container {
     background-color: white;
     width: 65%;
-    max-width: 900px;
-    height: 1024px;
+    min-height: 1024px;
 }
 
 .logo {
@@ -111,7 +107,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding:8px 0;
-    margin-top:50%;
+    margin-top:40%;
 }
 
 .logo > p {
@@ -121,11 +117,20 @@ body {
 }
 
 img {
-    height: 120px;
+    height: min(150px,20dvh);
     opacity: 100%;
 }
 
 .photoSource {
     color:white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
