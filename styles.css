@@ -183,6 +183,12 @@ label {
         display:block;
         width: 100%;
     }
+    span {
+        display: block;
+        color:red;
+        font-size: 12px;
+        position: absolute;
+    }
 }
 
 .formFooter {
